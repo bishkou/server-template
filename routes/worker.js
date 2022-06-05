@@ -4,9 +4,9 @@ const router = express.Router();
 const WorkerService = require('../services/worker')
 
 
-router.get('', WorkerService.getOne);
+router.get('/:id', WorkerService.getOne);
 
-router.get('/:id', WorkerService.getAll);
+router.get('', WorkerService.getAll);
 
 router.post('', WorkerService.addOne);
 

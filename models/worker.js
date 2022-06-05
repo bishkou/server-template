@@ -4,7 +4,6 @@ const Schema = mongoose.Schema;
 
 
 const Worker = new Schema({
-
     name: {type: String, default: ''},
 
     },
