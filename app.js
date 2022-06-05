@@ -4,7 +4,7 @@ const cors = require('cors')
 const morgan = require('morgan');
 const helmet = require('helmet')
 
-const exampleRoutes = require('./routes/example')
+const workerRoutes = require('./routes/worker')
 
 
 const app = express();
@@ -16,8 +16,7 @@ app.use(cors());
 app
     .use(bodyParser.urlencoded({extended: true}))
     .use(bodyParser.json())
-    .use('/api/example', exampleRoutes)
-
+    .use('/api/worker', workerRoutes)
 
 
 

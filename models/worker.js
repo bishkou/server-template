@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 
-const ExSchema = new Schema({
+const Worker = new Schema({
 
     name: {type: String, default: ''},
 
@@ -18,4 +18,4 @@ const ExSchema = new Schema({
         }
     });
 
-module.exports = mongoose.model('Client', ExSchema);
+module.exports = mongoose.model('Worker', Worker);
